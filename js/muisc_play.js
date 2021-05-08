@@ -49,7 +49,7 @@
             }
         };
 
-        audioBox.state = true;
+        audioBox.state = false;
         console.log(settings.audioUrl)
         if (settings.audioUrl) {
             console.log('audioFn', audioFn)
