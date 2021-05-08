@@ -1,0 +1,3 @@
+$('.music').addClass('on music-off');$('.music').on('click',function(){if($(this).hasClass('on')){$('audio').get(0).pause();$(this).removeClass('on music-off');$(this).removeClass('music-ani')}else{$('audio').get(0).play();$(this).addClass('on music-off');$(this).addClass('music-ani')}});var timerHide;
+function audioAutoPlay(id){var audio=document.getElementById(id);audio.play();
+document.addEventListener("WeixinJSBridgeReady",function(){audio.play()},false)}audioAutoPlay('audio01');
